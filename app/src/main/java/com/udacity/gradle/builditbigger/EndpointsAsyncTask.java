@@ -48,4 +48,10 @@ public class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
     protected void onPostExecute(String result) {
         mListener.onCompleted(result);
     }
+
+
+    //for testing purpose
+    public interface JsonGetTaskListener {
+        void onComplete(String jsonString, Exception e);
+    }
 }

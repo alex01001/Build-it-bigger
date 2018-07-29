@@ -66,15 +66,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCompleted(String result) {
                 JokeTelling joker = new JokeTelling();
-
-
-//                Toast.makeText(this, joker.getJoke(), Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(MainActivity.this, JokeDisplayActivity.class);
                 intent.putExtra("joke", joker.getJoke());
-
                 MainActivity.this.startActivity(intent);
-
             }
         };
 
