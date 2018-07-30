@@ -30,7 +30,7 @@ public class AppTest extends TestCase  {
         EndpointsAsyncTask.OnAsyncCompletedListener myListener = new EndpointsAsyncTask.OnAsyncCompletedListener() {
             @Override
             public void onCompleted(String resultStr) {
-                Log.i("zzzu", resultStr);
+                Log.i("Joke request result", resultStr);
                 result = resultStr;
                 signal.countDown();
 
